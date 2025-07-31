@@ -1,0 +1,44 @@
+# Fichiers temporaires et de cache
+*.tmp
+*.temp
+*.cache
+*.log
+*.bak
+*.swp
+*.swo
+*~
+
+# Dossiers de cache et logs
+cache/
+logs/
+uploads/
+temp/
+
+# Fichiers de configuration sensibles
+.env
+config.local.php
+
+# Fichiers de développement
+*.test.php
+*_test.php
+test_*.php
+debug_*.php
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE et éditeurs
+.vscode/
+.idea/
+*.sublime-*
+.atom/
+
+# Dependencies (si ajoutées plus tard)
+vendor/
+node_modules/
+
+# Fichiers de build
+dist/
+build/ 
