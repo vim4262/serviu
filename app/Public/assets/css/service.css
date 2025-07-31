@@ -1,0 +1,337 @@
+:root {
+    --primary-color: #5D3A00;
+    /* marron foncé */
+    --secondary-color: #A47551;
+    /* marron clair */
+    --background-color: #FDF8F3;
+    --text-color: #2E2E2E;
+    --white: #FFFFFF;
+    --border-radius: 12px;
+    --transition: 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-links li a.active {
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 0.3rem 0.8rem;
+    color: var(--primary-color);
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--white);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+    border-radius: var(--border-radius);
+}
+
+.logo {
+    animation: pulseRotate 4s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    font-weight: 600;
+}
+
+.cta {
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 1rem;
+
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.cta {
+    animation-delay: 0.7s;
+}
+
+
+footer {
+    background-image: url(../images/loisirs2.webp);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    color: var(--white);
+}
+.BILLETERIE{
+    background-image: url(../images/billet.jpg);
+    background-size: cover;
+    padding: 150px 0px;
+    width: 100%;
+    height: 100%;
+}
+.HEBERGEMENT{
+    background-image: url(../images/img.webp);
+    background-size: cover;
+    padding: 150px 0px;
+    width: 100%;
+    height: 100%;
+}
+.LOISIRS{
+    background-image: url(../images/bali_files/Best-Province-Lombok-1.jpg);
+    background-size: cover;
+    padding: 150px 0px;
+    width: 100%;
+    height: 100%;
+}
+.VISA{
+    background-image: url(../images/BACK\ VISA.jpg);
+    background-size: cover;
+    padding: 150px 0px;
+    width: 100%;
+    height: 100%;
+}
+.VISA h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.LOISIRS h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.BILLETERIE h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.BILLETERIE h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.HEBERGEMENT h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.one{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.one .p{
+    color: rgb(14, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pipo h2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Liste des services */
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+  }
+  
+  /* Carte de service */
+  .service {
+    background-color:var(--white);
+    border: 1px solid var(--white);
+    border-radius: 16px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  }
+  
+  /* Titres des services */
+  .service h3 {
+    color: var(--primary-brown);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Texte descriptif */
+  .service p {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Lien de réservation */
+  .moi {
+    text-decoration: none;
+    color: var(--dark-brown);
+  }
+  
+  .moi:hover .ligne {
+    color: var(--hover-color);
+    text-decoration: underline;
+  }
+  
+  /* Images */
+  .img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  /* Ligne réservation */
+  .ligne {
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+
+  @media (max-width: 768px) {
+    header .fa-bars {
+        display: block;
+    }
+    
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--light-bg);
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    header #toggler:checked ~ .navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: var(--light);
+        border: var(--border);
+        display: block;
+    }
+    
+    .home .content h3 {
+        font-size: 5rem;
+    }
+    
+    .home .content span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .heading {
+        font-size: 3rem;
+    }
+    
+    
+    }
+
+
