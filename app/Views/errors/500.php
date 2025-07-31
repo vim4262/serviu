@@ -6,7 +6,7 @@
             <h1>500</h1>
             <h2>Erreur serveur</h2>
             <p>Une erreur est survenue sur le serveur. Veuillez réessayer plus tard.</p>
-            <a href="index.php" class="btn">Retour à l'accueil</a>
+            <a href="<?php echo url('home'); ?>" class="btn">Retour à l'accueil</a>
         </div>
     </div>
 </section>

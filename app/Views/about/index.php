@@ -35,7 +35,7 @@
     <div class="container">
         <h2>ENVIE DE VOYAGER AVEC NOUS ?</h2>
         <p>Découvrez nos services et commencez à planifier votre prochaine aventure dès aujourd'hui.</p>
-        <a href="index.php?page=reservation" class="btn">Faire une réservation</a>
+        <a href="<?php echo url('reservation'); ?>" class="btn">Faire une réservation</a>
     </div>
 </section>
 

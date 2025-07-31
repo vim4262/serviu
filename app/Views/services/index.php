@@ -19,7 +19,7 @@
                                 <li><?php echo htmlspecialchars($feature); ?></li>
                             <?php endforeach; ?>
                         </ul>
-                        <a href="index.php?page=services&service=<?php echo $service['id']; ?>" class="btn">En savoir plus</a>
+                        <a href="<?php echo url('services', ['service' => $service['id']]); ?>" class="btn">En savoir plus</a>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -31,7 +31,7 @@
     <div class="container">
         <h2>PRÊT À COMMENCER VOTRE AVENTURE ?</h2>
         <p>Contactez-nous pour discuter de vos besoins et obtenir un devis personnalisé.</p>
-        <a href="index.php?page=reservation" class="btn">Faire une réservation</a>
+        <a href="<?php echo url('reservation'); ?>" class="btn">Faire une réservation</a>
     </div>
 </section>
 

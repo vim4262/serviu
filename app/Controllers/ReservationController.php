@@ -36,7 +36,7 @@ class ReservationController {
             if (empty($errors)) {
                 if ($this->reservation->create()) {
                     $this->sendConfirmationEmail();
-                    header('Location: index.php?page=reservation&action=success');
+                    header('Location: ' . url('reservation', ['action' => 'success']));
                     exit();
                 } else {
                     $errors[] = "Erreur lors de la création de la réservation";
@@ -48,7 +48,7 @@ class ReservationController {
                 return;
             }
         }
-        header('Location: index.php');
+        header('Location: ' . url('home'));
         exit();
     }
 
@@ -86,7 +86,7 @@ class ReservationController {
 
             if (empty($errors)) {
                 if ($this->reservation->update()) {
-                    header('Location: list.php');
+                    header('Location: ' . url('reservation', ['action' => 'list']));
                     exit();
                 } else {
                     $errors[] = "Erreur lors de la mise à jour";
@@ -103,7 +103,7 @@ class ReservationController {
     public function delete($id) {
         $this->reservation->id = $id;
         if ($this->reservation->delete()) {
-            header('Location: list.php');
+            header('Location: ' . url('reservation', ['action' => 'list']));
             exit();
         } else {
             echo "Erreur lors de la suppression";

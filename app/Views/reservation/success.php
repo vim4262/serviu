@@ -19,8 +19,8 @@
             </div>
             
             <div class="success-actions">
-                <a href="index.php" class="btn">Retour à l'accueil</a>
-                <a href="index.php?page=contact" class="btn btn-secondary">Nous contacter</a>
+                <a href="<?php echo url('home'); ?>" class="btn">Retour à l'accueil</a>
+                <a href="<?php echo url('contact'); ?>" class="btn btn-secondary">Nous contacter</a>
             </div>
         </div>
     </div>

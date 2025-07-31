@@ -16,16 +16,16 @@ require_once __DIR__ . '/../../Config/config.php';
 <body>
     <header>
         <div class="container header-container">
-            <a href="index.php">
+            <a href="<?php echo url('home'); ?>">
                 <img src="<?php echo asset('images/logo 1.png'); ?>" alt="Logo Servium" class="logo" />
             </a>
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a href="index.php" <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'class="active"' : ''; ?>>Accueil</a></li>
-                    <li><a href="index.php?page=about" <?php echo isset($_GET['page']) && $_GET['page'] == 'about' ? 'class="active"' : ''; ?>>À propos</a></li>
-                    <li><a href="index.php?page=reservation" <?php echo isset($_GET['page']) && $_GET['page'] == 'reservation' ? 'class="active"' : ''; ?>>Réservations</a></li>
-                    <li><a href="index.php?page=publication" <?php echo isset($_GET['page']) && $_GET['page'] == 'publication' ? 'class="active"' : ''; ?>>Publication&Actualités</a></li>
-                    <li><a href="index.php?page=contact" <?php echo isset($_GET['page']) && $_GET['page'] == 'contact' ? 'class="active"' : ''; ?>>Contact</a></li>
+                    <li><a href="<?php echo url('home'); ?>" <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' && (!isset($_GET['page']) || $_GET['page'] == 'home') ? 'class="active"' : ''; ?>>Accueil</a></li>
+                    <li><a href="<?php echo url('about'); ?>" <?php echo isset($_GET['page']) && $_GET['page'] == 'about' ? 'class="active"' : ''; ?>>À propos</a></li>
+                    <li><a href="<?php echo url('reservation'); ?>" <?php echo isset($_GET['page']) && $_GET['page'] == 'reservation' ? 'class="active"' : ''; ?>>Réservations</a></li>
+                    <li><a href="<?php echo url('publication'); ?>" <?php echo isset($_GET['page']) && $_GET['page'] == 'publication' ? 'class="active"' : ''; ?>>Publication&Actualités</a></li>
+                    <li><a href="<?php echo url('contact'); ?>" <?php echo isset($_GET['page']) && $_GET['page'] == 'contact' ? 'class="active"' : ''; ?>>Contact</a></li>
                     <li><a href="#">FR</a> / <a href="#">EN</a></li>
                 </ul>
             </nav>

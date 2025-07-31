@@ -84,7 +84,7 @@
     <div class="container">
         <h2>PRÊT À VOYAGER AVEC NOUS ?</h2>
         <p>Contactez notre équipe dès aujourd'hui et planifiez votre prochaine aventure en toute sérénité avec Servium.</p>
-        <a href="index.php?page=contact" class="btn">Contactez-nous</a>
+        <a href="<?php echo url('contact'); ?>" class="btn">Contactez-nous</a>
     </div>
 </section>
 

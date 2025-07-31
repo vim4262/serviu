@@ -41,7 +41,7 @@
                     </div>
                 <?php endif; ?>
                 
-                <form method="POST" action="index.php?page=contact">
+                <form method="POST" action="<?php echo url('contact'); ?>">
                     <div class="form-group">
                         <label for="nom">Nom complet *</label>
                         <input type="text" id="nom" name="nom" value="<?php echo isset($data['form_result']['data']['nom']) ? htmlspecialchars($data['form_result']['data']['nom']) : ''; ?>" required>

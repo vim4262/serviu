@@ -17,7 +17,7 @@
                 <p><?php echo nl2br(htmlspecialchars($data['article']['content'])); ?></p>
             </div>
             <footer class="article-footer">
-                <a href="index.php?page=publication" class="btn">← Retour aux articles</a>
+                <a href="<?php echo url('publication'); ?>" class="btn">← Retour aux articles</a>
             </footer>
         </article>
     </div>
@@ -27,7 +27,7 @@
     <div class="container">
         <h2>BESOIN D'AIDE POUR VOTRE VOYAGE ?</h2>
         <p>Nos experts sont là pour vous accompagner dans tous vos projets de voyage.</p>
-        <a href="index.php?page=contact" class="btn">Contactez-nous</a>
+        <a href="<?php echo url('contact'); ?>" class="btn">Contactez-nous</a>
     </div>
 </section>
 

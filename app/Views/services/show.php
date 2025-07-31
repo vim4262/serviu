@@ -20,8 +20,8 @@
                 </ul>
             </div>
             <footer class="service-footer">
-                <a href="index.php?page=services" class="btn">← Retour aux services</a>
-                <a href="index.php?page=reservation" class="btn btn-primary">Demander un devis</a>
+                <a href="<?php echo url('services'); ?>" class="btn">← Retour aux services</a>
+                <a href="<?php echo url('reservation'); ?>" class="btn btn-primary">Demander un devis</a>
             </footer>
         </div>
     </div>
@@ -31,7 +31,7 @@
     <div class="container">
         <h2>PRÊT À COMMENCER VOTRE AVENTURE ?</h2>
         <p>Contactez-nous pour discuter de vos besoins et obtenir un devis personnalisé.</p>
-        <a href="index.php?page=contact" class="btn">Contactez-nous</a>
+        <a href="<?php echo url('contact'); ?>" class="btn">Contactez-nous</a>
     </div>
 </section>
 

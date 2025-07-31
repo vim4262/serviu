@@ -25,7 +25,7 @@
         <h1>Nos Services</h1>
         <div class="card-grid">
             <?php foreach ($data['services'] as $service): ?>
-                <a href="index.php?page=services&service=<?php echo $service['link']; ?>" class="card">
+                <a href="<?php echo url('services', ['service' => $service['link']]); ?>" class="card">
                     <h3><?php echo htmlspecialchars($service['title']); ?></h3>
                     <p><?php echo htmlspecialchars($service['description']); ?></p>
                 </a>
@@ -48,9 +48,9 @@
                 <div class="blog-post-card">
                     <img src="<?php echo asset(str_replace('Public/assets/', '', $article['image'])); ?>" alt="<?php echo htmlspecialchars($article['alt']); ?>" />
                     <div class="post-details">
-                        <h3><a href="index.php?page=publication&article=<?php echo str_replace('#', '', $article['link']); ?>"><?php echo htmlspecialchars($article['title']); ?></a></h3>
+                        <h3><a href="<?php echo url('publication', ['article' => str_replace('#', '', $article['link'])]); ?>"><?php echo htmlspecialchars($article['title']); ?></a></h3>
                         <p class="author">Par <?php echo htmlspecialchars($article['author']); ?> | <?php echo htmlspecialchars($article['date']); ?></p>
-                        <a href="index.php?page=publication&article=<?php echo str_replace('#', '', $article['link']); ?>" class="read-more">Lire l'article</a>
+                        <a href="<?php echo url('publication', ['article' => str_replace('#', '', $article['link'])]); ?>" class="read-more">Lire l'article</a>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -63,7 +63,7 @@
     <div class="container">
         <h2>PRÊT À VOYAGER AVEC NOUS ?</h2>
         <p>Contactez notre équipe dès aujourd'hui et planifiez votre prochaine aventure en toute sérénité avec Servium.</p>
-        <a href="index.php?page=contact" class="btn">Contactez-nous</a>
+        <a href="<?php echo url('contact'); ?>" class="btn">Contactez-nous</a>
     </div>
 </section>
 
