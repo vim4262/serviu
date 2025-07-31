@@ -2,22 +2,6 @@
 
 Ce projet a été transformé d'un site HTML statique en une application PHP moderne utilisant l'architecture MVC (Modèle-Vue-Contrôleur).
 
-## 🚀 Transformation Complète
-
-### Avant (HTML statique)
-- Pages HTML séparées
-- Pas de gestion dynamique du contenu
-- Pas de base de données
-- Pas de formulaires fonctionnels
-
-### Après (PHP MVC)
-- Architecture MVC complète
-- Gestion dynamique du contenu
-- Base de données intégrée
-- Formulaires fonctionnels avec validation
-- Système de routage
-- Sécurité renforcée
-
 ## 📁 Structure du Projet
 
 ```
